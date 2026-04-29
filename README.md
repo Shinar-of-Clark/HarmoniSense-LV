@@ -34,8 +34,9 @@ The project adopts a modular design with a clear code structure:
 
 To facilitate developers and users, the project provides detailed Markdown documentation:
 
-- 📄 **Product Specification**: Contains detailed algorithm methodology, technical advantages, and system screenshot descriptions.
-- 📘 **User Manual**: Provides step-by-step guidance on how to run the system, import data, and interpret reports.
+- 📄 [**Product Specification**](Product%20Specification.md): Contains detailed algorithm methodology, technical advantages, and system screenshot descriptions.
+- 📘 [**User Manual**](User%20Manual.md): Provides step-by-step guidance on how to run the system, import data, and interpret reports.
+- 🍄 [**White Paper**](HarmoniSense_Core%20Functions%20and%20Principles%20White%20Paper.md): Core functions and principles documentation.
 
 ## 🚦 Quick Start
 
@@ -45,36 +46,37 @@ Ensure your Python environment supports the following libraries:
 pip install dash dash-bootstrap-components pandas networkx numpy scipy openpyxl
 ```
 
-### 2. 启动系统
-执行主脚本启动 Flask/Dash 服务：
+### 2. Launch the System
+Run the main script to start the Flask/Dash service:
 ```bash
 python dashboard_app.py
 ```
-启动后访问：`http://127.0.0.1:8052`
+After launching, visit: `http://127.0.0.1:8053`
 
-## 📚 理论基础与致谢 (Theoretical Foundation)
+## 📚 Theoretical Foundation & Acknowledgements
 
-本平台的算法设计理念与物理映射逻辑，深受以下学术成果的启发：
+The algorithm design philosophy and physical mapping logic of this platform are deeply inspired by the following academic achievements:
 
-- **论文名称**: *Utilising Smart-Meter Harmonic Data for Low-Voltage Network Topology Identification*
-- **核心团队**: Ali Othman, Neville R. Watson, Andrew Lapthorn (University of Canterbury); Radnya Mukhedkar (EPECentre).
-- **发表期刊**: *Energies* 2025, 18(13), 3333.
-- **论文链接**: [https://doi.org/10.3390/en18133333](https://doi.org/10.3390/en18133333)
+- **Paper Title**: *Utilising Smart-Meter Harmonic Data for Low-Voltage Network Topology Identification*
+- **Core Team**: Ali Othman, Neville R. Watson, Andrew Lapthorn (University of Canterbury); Radnya Mukhedkar (EPECentre).
+- **Published Journal**: *Energies* 2025, 18(13), 3333.
+- **Paper Link**: [https://doi.org/10.3390/en18133333](https://doi.org/10.3390/en18133333)
 
-**致谢**：特别感谢坎特伯雷大学研究团队在低压配网谐波分析领域的开创性工作。
-
----
-
-## ⚖️ 知识共享许可协议 (License)
-
-本项目采用 **[知识共享 署名-非商业性使用-相同方式共享 4.0 国际许可协议 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)** 进行许可。
-
-- **您可以**：自由地共享（复制、发行）和演绎（修改、转换）本作品。
-- **但必须遵守**：
-  - **署名**：必须给出适当的署名，提供许可协议链接。
-  - **非商业性使用**：**不得将本作品用于商业目的。**
-  - **相同方式共享**：若演绎本作品，必须采用与本作品相同的许可协议分发。
+**Acknowledgements**: Special thanks to the research team at the University of Canterbury for their pioneering work in the field of harmonic analysis for low-voltage distribution networks.
 
 ---
 
-> **© Clark 设计与开发** | I have obtained the key to Babel, and I shall raise countless towers in Shinar
+## ⚖️ License
+
+This project is licensed under the **[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)**.
+
+- **You are free to**: Share (copy and redistribute) and Adapt (remix, transform, and build upon) the material.
+- **Under the following terms**:
+  - **Attribution**: You must give appropriate credit and provide a link to the license.
+  - **Non-Commercial**: **You may not use the material for commercial purposes.**
+  - **Share-Alike**: If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+---
+
+> **© Designed & Developed by Clark** | I have obtained the key to Babel, and I shall raise countless towers in Shinar
+
