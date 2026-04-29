@@ -1,5 +1,5 @@
 # HarmoniSense-LV
-> **低压配网物理指纹与 AI 专家诊断平台**
+> **Low-Voltage Distribution Network Physical Fingerprint and AI Expert Diagnostic Platform**
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
@@ -9,38 +9,38 @@
 
 <img src="images/sys_overview.png" width="800" alt="HarmoniSense-LV System Dashboard Mastery">
 
-HarmoniSense-LV 是一款基于电能质量高阶谐波特征（Physical Fingerprints）开发的低压配网诊断系统。通过 AI 算法实现对配电网物理拓扑的自动化还原，并对接入负载进行多维度的指纹识别，快速定位窃电、黑户及新型能源设备的违规接入。
+HarmoniSense-LV is an AI-driven diagnostic system for low-voltage grids based on high-order physical harmonic fingerprints. It enables automatic topology reconstruction of the physical distribution network via AI algorithms, performs multi-dimensional fingerprint identification of connected loads, and quickly locates electricity theft, unregistered users, and unauthorized connections of new energy equipment.
 
 ---
 
-## 🚀 核心特性
+## 🚀 Core Features
 
-- **AI 拓扑还原**：基于 Pearson 相关系数算法，无需人工录入台账，自动还原台区物理相位与链路结构。
-- **负载指纹识别**：深度特征提取技术，精准识别 EV 充电、分布式光伏、加密货币矿机、大功率热泵等特定用电模式。
-- **非授权节点探测**：通过物理能量守恒残差分析，秒级锁定非授权接入（窃电/黑户）节点。
-- **多语言交互**：内置中英文双语动态切换，提供工业级实时交互看板。
+- **AI Topology Reconstruction**: Based on the Pearson correlation coefficient algorithm, it automatically reconstructs the physical phase and link structure of the substation area without manual record entry.
+- **Load Fingerprint Identification**: Deep feature extraction technology accurately identifies specific electricity consumption patterns such as EV charging, distributed photovoltaics, cryptocurrency mining machines, and high-power heat pumps.
+- **Unauthorized Node Detection**: Through physical energy conservation residual analysis, it locks onto unauthorized connection (electricity theft/unregistered user) nodes in seconds.
+- **Multi-language Interaction**: Built-in dynamic switching between Chinese and English, providing an industrial-grade real-time interactive dashboard.
 
-## 🛠️ 技术架构
+## 🛠️ Technical Architecture
 
-项目采用模块化设计，代码结构清晰：
+The project adopts a modular design with a clear code structure:
 
-- `dashboard_app.py`: **主程序入口**。基于 Dash (Plotly) 构建，负责全局状态管理与回调逻辑。
-- `app_logic.py`: **AI 核心算法中心**。包含数据清洗、仿真引擎、相位识别及异常研判逻辑。
-- `app_viz.py`: **拓扑图形渲染引擎**。负责 NetworkX 空间计算与 Plotly 动态拓扑可视化。
-- `app_components.py`: **UI 组件库**。封装了侧边栏、卡片、专家报告框及风琴折叠组件。
-- `app_translations.py`: **国际化字典**。支持全量业务术语的中英文映射。
+- `dashboard_app.py`: **Main program entry point**. Built on Dash (Plotly), responsible for global state management and callback logic.
+- `app_logic.py`: **AI core algorithm center**. Contains data cleaning, simulation engine, phase identification, and anomaly analysis logic.
+- `app_viz.py`: **Topology graph rendering engine**. Responsible for NetworkX spatial computation and Plotly dynamic topology visualization.
+- `app_components.py`: **UI component library**. Encapsulates sidebar, cards, expert report box, and accordion components.
+- `app_translations.py`: **Internationalization dictionary**. Supports full business terminology mapping between Chinese and English.
 
-## 📖 辅助文档
+## 📖 Auxiliary Documentation
 
-为了方便开发者和用户，项目中提供了详尽的 Markdown 文档：
+To facilitate developers and users, the project provides detailed Markdown documentation:
 
-- 📄 [**产品说明书 (Product Spec)**](./产品说明.md): 包含详细的算法方法论、技术优势及系统截图说明。
-- 📘 [**用户操作手册 (User Manual)**](./用户操作手册.md): 分步骤指导如何运行系统、导入数据并解读报告。
+- 📄 **Product Specification**: Contains detailed algorithm methodology, technical advantages, and system screenshot descriptions.
+- 📘 **User Manual**: Provides step-by-step guidance on how to run the system, import data, and interpret reports.
 
-## 🚦 快速开始
+## 🚦 Quick Start
 
-### 1. 环境准备
-确保您的 Python 环境支持以下库：
+### 1. Environment Setup
+Ensure your Python environment supports the following libraries:
 ```bash
 pip install dash dash-bootstrap-components pandas networkx numpy scipy openpyxl
 ```
