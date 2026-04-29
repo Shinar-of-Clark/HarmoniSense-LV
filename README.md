@@ -50,7 +50,7 @@ pip install dash dash-bootstrap-components pandas networkx numpy scipy openpyxl
 ```bash
 python dashboard_app.py
 ```
-启动后访问：`http://127.0.0.1:8052`
+启动后访问：`http://127.0.0.1:8053`
 
 ## 📚 理论基础与致谢 (Theoretical Foundation)
 
