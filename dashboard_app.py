@@ -18,7 +18,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY], suppress_cal
 server = app.server
 app.title = "HarmoniSense-LV"
 
-ASSET_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ASSETS")
+ASSET_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets")
 
 def get_b64_img(filename):
     path = os.path.join(ASSET_DIR, filename)

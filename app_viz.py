@@ -245,8 +245,8 @@ def build_physical_topo(data_dict, t_imb, t_ovl, t_theft_th, t_loss_th, cap_dict
         ntxt.append(label_text)
         htxt.append(f"Node: {n}<br>Corr: {ri:.4f}<br>Dist: {rdist:.1f} m<br>Demand: {npow:.2f} kW<br><b>[{'<br>'.join(dp) if dp else t_text['diag_ok']}]</b>")
         
-        # Map Phase A/B/C to local asset paths
-        phase_asset = f"assets/{pc}_PHASE.png"
+        # Map Phase A/B/C to local asset paths from pre-loaded Base64
+        phase_asset = IMG_B64.get(pc, "")
         
         # If true black user, do not show house icon, only keep red X mark
         if anom != 'BlackUser_Anomaly':
@@ -342,8 +342,8 @@ def build_physical_topo(data_dict, t_imb, t_ovl, t_theft_th, t_loss_th, cap_dict
         t_short = f"T_{tn.split('_')[1]}" if '_' in tn else "T_1"
         thx.append(txv); thy.append(tyv); ttx.append(f"<b>{t_short}: {sp:.1f} kW</b>")
         thtx.append(f"<b>{tn}</b><br>{t_text['total_power']}: {sp:.1f} kW<br>{t_text['compliant']}: {tm:.1f} kW<br>{t_text['line_loss']}: {tl:.1f} kW<br>{t_text['theft']}: {tth:.1f} kW")
-        # Transformer native image
-        img_list.append(dict(source="assets/Transformer.png", xref="x", yref="y", x=txv, y=tyv, sizex=V_CFG['trans_size_map'], sizey=V_CFG['trans_size_map'], xanchor="center", yanchor="middle", layer="above"))
+        # Transformer native image using Base64
+        img_list.append(dict(source=IMG_B64.get('T', ""), xref="x", yref="y", x=txv, y=tyv, sizex=V_CFG['trans_size_map'], sizey=V_CFG['trans_size_map'], xanchor="center", yanchor="middle", layer="above"))
     
     # Transformer label coordinates (offset upwards to prevent icon covering text after zooming)
     lty_list = [y + V_CFG['trans_size_map'] * 1.0 for y in thy]
