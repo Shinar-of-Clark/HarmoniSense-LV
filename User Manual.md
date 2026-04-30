@@ -25,7 +25,7 @@ The system provides two ways to input data:
 2. **Quick Demo**: Click "Load Preset Sample," and the system will automatically load test data to demonstrate the AI logic.
 
 <div align="center">
-  <img src="images/manual_import.png" width="800">
+  <img src="Images/manual_import.png" width="800">
   <p><b>📸 Figure 1: Data Import and Preset Sample Loading Area</b></p>
 </div>
 
@@ -40,7 +40,7 @@ In the "Alarm & Analysis Thresholds" panel in the middle, you can adjust the fol
 - **Drill Down Node Information**: Hover your mouse over any node icon to view real-time electromagnetic fingerprint data.
 
 <div align="center">
-  <img src="images/manual_topo.png" width="800">
+  <img src="Images/manual_topo.png" width="800">
   <p><b>📸 Figure 2: Topology Graph Interactive View and Node Drill-Down Function</b></p>
 </div>
 
@@ -51,7 +51,7 @@ The red alert box at the bottom of the page summarizes major hidden dangers in t
 - Line loss anomalies and operational risk warnings.
     
 <div align="center">
-  <img src="images/load_fingerprint.png" width="800">
+  <img src="Images/load_fingerprint.png" width="800">
   <p><b>📸 Figure 3: AI Expert Diagnostic Report and Recommended Actions Display</b></p>
 </div>
 
