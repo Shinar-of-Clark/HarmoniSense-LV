@@ -18,12 +18,20 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY], suppress_cal
 server = app.server
 app.title = "HarmoniSense-LV"
 
-ASSET_DIR = os.path.join(os.path.dirname(__file__), "ASSETS")
+ASSET_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ASSETS")
+
 def get_b64_img(filename):
     path = os.path.join(ASSET_DIR, filename)
-    if not os.path.exists(path): return ""
-    with open(path, "rb") as f:
-        return f"data:image/png;base64,{base64.b64encode(f.read()).decode('ascii')}"
+    if not os.path.exists(path): 
+        print(f"⚠️ Warning: Image not found at {path}")
+        return ""
+    try:
+        with open(path, "rb") as f:
+            encoded = base64.b64encode(f.read()).decode('ascii')
+            return f"data:image/png;base64,{encoded}"
+    except Exception as e:
+        print(f"❌ Error loading image {filename}: {e}")
+        return ""
 
 IMG_B64 = {p: get_b64_img(f'{p}_PHASE.png') for p in ['A', 'B', 'C']}
 IMG_B64['T'] = get_b64_img('Transformer.png')
