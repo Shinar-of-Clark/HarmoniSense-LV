@@ -27,7 +27,7 @@ Based on a "trunk feeder" physical model, the system intelligently filters out c
 
 <div align="center">
   <p><b>📸 Figure 1: AI-Reconstructed Panoramic View of Substation Area Three-Phase Physical Topology</b></p>
-  <img src="images/topo_demo.png" alt="Topology Display" width="800">
+  <img src="Images/topo_demo.png" alt="Topology Display" width="800">
 </div>
 
 ---
@@ -51,7 +51,7 @@ Our AI system acts like an experienced sonar operator, capable of precisely stri
 
 <div align="center">
   <p><b>📸 Figure 2: Precise Capture of High-Power Anomalous Devices</b></p>
-  <img src="images/anomaly_demo.png" alt="Anomaly Capture" width="800">
+  <img src="Images/anomaly_demo.png" alt="Anomaly Capture" width="800">
 </div>
 
 ---
@@ -69,7 +69,7 @@ Electrical energy transmission along cables is inevitably accompanied by ohmic l
 
 <div align="center">
   <p><b>📸 Figure 3: Physical Line Loss and End-of-Supply Inference</b></p>
-  <img src="images/distance_demo.png" alt="Distance and Line Loss Inference" width="800">
+  <img src="Images/distance_demo.png" alt="Distance and Line Loss Inference" width="800">
 </div>
 
 ---
@@ -89,7 +89,7 @@ Even more powerfully, the system can not only detect this undercurrent but also 
 
 <div align="center">
   <p><b>📸 Figure 4: Unregistered User Identification</b></p>
-  <img src="images/UNREGser_demo.png" alt="Unregistered User Identification" width="800">
+  <img src="Images/UNREGser_demo.png" alt="Unregistered User Identification" width="800">
 </div>
 
 ## 📚 Theoretical Foundation and Acknowledgements
