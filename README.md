@@ -7,7 +7,7 @@
 [![Engine](https://img.shields.io/badge/Engine-Physical%20AI-orange.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Win%20%7C%20Linux%20%7C%20Mac-777.svg)]()
 
-<img src="images/sys_overview.png" width="800" alt="HarmoniSense-LV System Dashboard Mastery">
+<img src="Images/sys_overview.png" width="800" alt="HarmoniSense-LV System Dashboard Mastery">
 
 HarmoniSense-LV is an AI-driven diagnostic system for low-voltage grids based on high-order physical harmonic fingerprints. It enables automatic topology reconstruction of the physical distribution network via AI algorithms, performs multi-dimensional fingerprint identification of connected loads, and quickly locates electricity theft, unregistered users, and unauthorized connections of new energy equipment.
 
