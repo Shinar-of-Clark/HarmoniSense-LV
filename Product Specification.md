@@ -4,7 +4,7 @@
 **HarmoniSense-LV** is an industrial-grade diagnostic platform designed for smart grid operation and maintenance. It achieves "transparent" substation area management without additional hardware investment by deeply analyzing physical waveform characteristic signals in low-voltage distribution networks. The platform integrates core AI algorithms such as automatic topology reconstruction, electricity consumption fingerprint identification, and illegal node detection, effectively addressing the four major pain points of low-voltage distribution networks: "unclear topology, inaccurate phasing, hidden electricity theft, and unauthorized connections."
 
 <div align="center">
-  <img src="images/sys_overview.png" width="800">
+  <img src="Images/sys_overview.png" width="800">
   <p><b>Figure 1: HarmoniSense-LV System Global Central Dashboard Interface</b></p>
 </div>
 
@@ -18,7 +18,7 @@
 - **Visual Interaction**: Provides a dynamic electromagnetic clustering topology view, supporting real-time hover preview of node status.
 
 <div align="center">
-  <img src="images/topo_demo.png" width="800">
+  <img src="Images/topo_demo.png" width="800">
   <p><b>Figure 2: AI Topology Reconstruction Results and Electromagnetic Clustering Analysis View</b></p>
 </div>
 
@@ -30,7 +30,7 @@ The system can automatically identify and locate the following specific electric
 - **Environmental Temperature Control (HeatPump)**: Identifies start-stop signals of high-inductive loads such as heat pumps and large air conditioners.
 
 <div align="center">
-  <img src="images/load_fingerprint.png" width="800">
+  <img src="Images/load_fingerprint.png" width="800">
   <p><b>Figure 3: High-Precision Load Fingerprint Diagnosis and Expert Analysis Pop-up</b></p>
 </div>
 
@@ -67,7 +67,7 @@ The system can automatically identify and locate the following specific electric
 The platform includes **v1.0 Update Log & Model Description** (accordion button at the bottom of the webpage), which details the identification logic for harmonic fingerprints from V13 to V19 and the mathematical principles of Pearson spatial mapping.
 
 <div align="center">
-  <img src="images/operation_report.png" width="800">
+  <img src="Images/operation_report.png" width="800">
   <p><b>Figure 4: Data Import, Preset Sample Testing, and Expert Analysis Report</b></p>
 </div>
 
