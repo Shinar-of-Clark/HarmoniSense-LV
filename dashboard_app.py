@@ -15,6 +15,7 @@ from app_translations import TRANSLATIONS
 
 # --- Resource Initialization ---
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY], suppress_callback_exceptions=True)
+server = app.server
 app.title = "HarmoniSense-LV"
 
 ASSET_DIR = os.path.join(os.path.dirname(__file__), "ASSETS")
